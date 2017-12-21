@@ -3,7 +3,30 @@
 *::after {
   box-sizing: border-box; }
 
+body {
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both; }
+
 img {
   max-width: 100%; }
+
+.wrapper {
+  width: 75vw;
+  margin: 0 auto; }
+
+.xLarge {
+  width: 30vw;
+  height: 15vh; }
+
+.large-money {
+  font-size: 4rem !important;
+  vertical-align: middle !important; }
+
+.sticky {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100%; }
 
 /*# sourceMappingURL=app.css.map */
