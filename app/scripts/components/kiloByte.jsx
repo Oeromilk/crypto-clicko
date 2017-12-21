@@ -4,26 +4,23 @@ var Material = require('react-materialize');
 var KiloByte = React.createClass({
   getInitialState: function(){
     return {
-      visible: "hide",
+      visible: "disabled",
       isTrue: false
     }
   },
   componentDidUpdate: function(){
     var isTrue = this.state.isTrue
     if(this.props.amount >= this.props.size && !isTrue){
-      this.setState({visible: " ", isTrue: true});
+      this.setState({visible: "", isTrue: true});
     }
   },
   render: function(){
     return (
-      <Material.Row className={this.state.visible}>
-        <Material.Col s={8} className="card-panel">
-          <p className="blue-text text-darken-2"><span className="badge">{this.props.iAmount} kiloClicker</span>Buy an auto clicker to earn automatically, it does cost though.</p>
-        </Material.Col>
-        <Material.Col s={4}>
-          <Material.Button waves='light' onClick={this.props.buy}>Buy</Material.Button>
-        </Material.Col>
-      </Material.Row>
+      <Material.CollectionItem className="blue-text text-darken-2">
+        kiloByte clicker will help you on your way, at a cost though. (1,000)
+        <Material.Button className={this.state.visible} waves='light' onClick={this.props.buy}>Buy</Material.Button>
+        <Material.Badge>{this.props.kiloAmount} kiloClickers</Material.Badge>
+      </Material.CollectionItem>
     )
   }
 });
