@@ -78,7 +78,7 @@ var HomeContainer = React.createClass({
       <Container save={this.save} load={this.load}>
         <h3 className="center-align">{this.state.amount} bytes</h3>
         <Material.Row className="center-align">
-          <Material.Button waves='light' className="xLarge" style={this.state.buttonStyle} onClick={this.collect}>
+          <Material.Button waves='light' className="xLarge button" style={this.state.buttonStyle} onClick={this.collect}>
             <Material.Icon className="large-money">attach_money</Material.Icon>
           </Material.Button>
         </Material.Row>
