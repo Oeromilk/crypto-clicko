@@ -5,28 +5,33 @@
 
 body {
   min-height: 400px;
-  margin-bottom: 100px;
-  clear: both; }
+  margin-bottom: 100px; }
 
 img {
   max-width: 100%; }
+
+.btn {
+  background-color: #1976d2 !important; }
+
+.progress {
+  background-color: #64b5f6 !important; }
+
+.determinate {
+  background-color: #1976d2 !important; }
 
 .wrapper {
   width: 75vw;
   margin: 0 auto; }
 
 .xLarge {
-  width: 30vw;
-  height: 15vh; }
+  width: 50vw;
+  height: 20vh; }
 
 .large-money {
   font-size: 4rem !important;
   vertical-align: middle !important; }
 
 .sticky {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-top: 100%; }
+  width: 100%; }
 
 /*# sourceMappingURL=app.css.map */

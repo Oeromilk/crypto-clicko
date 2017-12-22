@@ -6,15 +6,13 @@ var Material = require('react-materialize');
 var Footer = React.createClass({displayName: "Footer",
   render: function(){
     return (
-      React.createElement(Material.Footer, {className: "sticky", 
-        links: 
-      		React.createElement("ul", null, 
-      			React.createElement("li", null, React.createElement(Material.Button, {onClick: this.props.save, className: "grey-text text-lighten-3"}, "Save")), 
-      			React.createElement("li", null, React.createElement(Material.Button, {onClick: this.props.load, className: "grey-text text-lighten-3"}, "Load"))
-      		)
-      	}, 
+      React.createElement("div", {className: "sticky grey darken-1 white-text"}, 
         React.createElement("h5", null, "Save!"), 
-        React.createElement("p", null, "If you don't save you start back at 0.")
+        React.createElement("p", null, "If you don't save you start back at 0."), 
+          React.createElement("ul", null, 
+            React.createElement("li", null, React.createElement(Material.Button, {onClick: this.props.save, className: "grey-text text-lighten-3"}, "Save")), 
+            React.createElement("li", null, React.createElement(Material.Button, {onClick: this.props.load, className: "grey-text text-lighten-3"}, "Load"))
+          )
       )
     )
   }
@@ -24,7 +22,7 @@ var NavBar = React.createClass({displayName: "NavBar",
   render: function(){
     return (
       React.createElement("nav", null, 
-        React.createElement("div", {className: "nav-wrapper"}, 
+        React.createElement("div", {className: "nav-wrapper grey darken-1 white-text"}, 
           React.createElement("a", {href: "#", className: "brand-logo center"}, "Crypto Clicko")
         )
       )
@@ -130,7 +128,7 @@ var HomeContainer = React.createClass({displayName: "HomeContainer",
       React.createElement(Container, {save: this.save, load: this.load}, 
         React.createElement("h3", {className: "center-align"}, this.state.amount, " bytes"), 
         React.createElement(Material.Row, {className: "center-align"}, 
-          React.createElement(Material.Button, {waves: "light", className: "xLarge", style: this.state.buttonStyle, onClick: this.collect}, 
+          React.createElement(Material.Button, {waves: "light", className: "xLarge button", style: this.state.buttonStyle, onClick: this.collect}, 
             React.createElement(Material.Icon, {className: "large-money"}, "attach_money")
           )
         ), 
